@@ -1,4 +1,4 @@
-package service;
+package com.vanhack.api.skipthedishes.service;
 
 import java.util.Optional;
 
