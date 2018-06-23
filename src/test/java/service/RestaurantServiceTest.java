@@ -12,6 +12,7 @@ import org.mockito.MockitoAnnotations;
 
 import com.vanhack.api.skipthedishes.dao.RestaurantRepository;
 import com.vanhack.api.skipthedishes.domain.Restaurant;
+import com.vanhack.api.skipthedishes.service.RestaurantService;
 
 public class RestaurantServiceTest {
 

@@ -1,18 +1,37 @@
 package com.vanhack.api.skipthedishes.domain;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlRootElement;
 
+@Entity
+@Table
+@XmlRootElement
+@XmlAccessorType(XmlAccessType.FIELD)
 public class Restaurant {
 
+	@Id
+    @GeneratedValue()
 	private long id;
 	
+	@Column(nullable = false)
 	private String name;
 
+	@Column
 	private SegmentEnum segment;
 	
+	@Column
 	private String address;
 	
+	@Column
 	private double lat;
 	
+	@Column
 	private double lng;
 	
 	public enum SegmentEnum {
